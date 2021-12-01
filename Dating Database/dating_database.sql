@@ -73,3 +73,25 @@ CREATE TABLE contact_seeking(
 	CONSTRAINT contact_id_pk FOREIGN KEY(contact_id) REFERENCES my_contacts(contact_id),
 	CONSTRAINT seeking_id_pk FOREIGN KEY(contact_id) REFERENCES seeking(seeking_id)
 );
+
+
+--DATA INSERTION
+INSERT INTO zip_code(zip_code, city, province)
+VALUES('0001', 'Bhisho', 'Eastern Cape'),
+      ('0002', 'Bloemfontein', 'Free State'),
+	  ('0003', 'Johannesburg', 'Gauteng'),
+	  ('0004', 'Pietermaritzburg', 'KwaZulu-Natal'),
+	  ('0005', 'Polokwane', 'Limpopo'),
+	  ('0006', 'Nelspruit', 'Mpumalanga'),
+	  ('0007', 'Kimberley', 'Northern Cape'),
+	  ('0008', 'Mahikeng', 'North West'),
+	  ('0009', 'Cape Town', 'Western Cape'),
+	  ('0010', 'Grahamstown', 'Eastern Cape'),
+	  ('0011', 'Winburg', 'Free State'),
+	  ('0012', 'Pretoria', 'Gauteng'),
+	  ('0013', 'Durban', 'KwaZulu-Natal'),
+	  ('0014', 'Louis Trichardt', 'Limpopo'),
+	  ('0015', 'Belfast', 'Mpumalanga'),
+	  ('0016', 'Kimberly', 'Northern Cape'),
+	  ('0017', 'Klerksdorp', 'North West'),
+	  ('0018', 'Stellenbosch', 'Western Cape');
